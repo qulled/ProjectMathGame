@@ -10,7 +10,7 @@ if vote != 'д':
     exit()
 elif vote == 'д':  # Начало игры. Первый уровень.
     start_bd()
-    with open('start.txt') as inf:
+    with open('start.txt', encoding='utf-8') as inf:
         for line in inf:
             line = line.strip()
             print(line)
